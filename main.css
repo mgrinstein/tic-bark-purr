@@ -1,0 +1,87 @@
+.column {
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    border: 2px #C1A3A3 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.row {
+    width: 400px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.marker {
+    width: 80px;
+    height: 80px;
+}
+
+#winner-display {
+    display: none;
+    background-color: #886F6F;
+    color: white;
+}
+
+body {
+    text-align: center;
+    background-color: #F3C5C5;
+    color: #694E4E;
+}
+
+#reset-button{
+    margin-top: 10px;
+    background-color: #fee6e3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+}
+
+#reset-button:after{
+    background-color: #694E4E;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+#reset-button:hover:after {
+    transform: translate(0, 0);
+}
+
+#reset-button:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+#reset-button:hover {
+    outline: 0;
+}
+@media (min-width: 768px) {
+    #reset-button {
+    padding: 0 40px;
+    }
+}
