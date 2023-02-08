@@ -9,3 +9,9 @@ Features developed:
 - Detect a winner, and display they've won
 - Detect a draw, and display it
 - Reset game
+
+<br>
+<br>
+
+_Extra (uncalled-for) feature:_
+- _Emojis of cats and dogs instead of noughts and crosses_
