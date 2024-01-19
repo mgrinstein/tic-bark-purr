@@ -2,7 +2,7 @@
 // You should not have to make any changes in this file to get your game working.
 
 // Validate academite functions are available
-const functions = ["takeTurn", "getBoard", "checkWinner", "resetGame"];
+const functions = ["takeTurn", "getBoard", "checkWinner", "resetGame", "displayNextPlayer"];
 for (f of functions) {
     const functionObject = window[f];
     if (typeof functionObject !== "function") {
@@ -57,10 +57,11 @@ function positionClick(rowIndex, columnIndex, event) {
             throw "Expecting 'checkWinner' to return null or one of the strings 'noughts', 'crosses' or 'nobody'. Actually received: " + winner;
         }
         const winnerName = document.getElementById("winner-name");
-        winnerName.innerText = winner;
+        winnerName.innerText = nextPlayerDictionary[winner];
         const winnerDisplay = document.getElementById("winner-display");
         winnerDisplay.style.display = "block";
     }
+    displayNextPlayer(isGameOver)
 }
 
 // The reset button was clicked, call the game's reset function then reset the DOM.
@@ -71,6 +72,7 @@ function resetClick(event) {
     const winnerDisplay = document.getElementById("winner-display");
     winnerDisplay.style.display = "None";
     clearBoard();
+    displayNextPlayer(isGameOver)
 }
 
 // Bind the click events for the grid.
@@ -100,3 +102,4 @@ if (typeof exports === 'object') {
 } else {
     console.log("Running in Browser")
 }
+displayNextPlayer(isGameOver)

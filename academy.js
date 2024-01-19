@@ -30,6 +30,27 @@ const player2 = "nought" //"nought"
 let isGameOver = false
 let currentPlayer = "crosses" // X goes first on TTT
 
+const nextPlayerDictionary = {
+    "crosses": "🐶",
+    "noughts": "🐱",
+    "nobody": "nobody"
+}
+// display next player
+function displayNextPlayer(isGameOver) {
+    let defaultPlayer = "🐶"
+
+
+    const currentPlayerName = document.getElementById("current-player-name");
+    
+    if (!isGameOver) {
+        currentPlayerName.innerText = currentPlayer ? nextPlayerDictionary[currentPlayer] : defaultPlayer;
+    } else {
+        currentPlayerName.innerText = "-"
+    }
+    const currentPlayerDisplay = document.getElementById("current-player-display");
+    currentPlayerDisplay.style.display = "block";
+}
+
 // >> Functions
 // Take the row and column number between 0 and 2 
 // (inclusive) and update the game state.
@@ -112,7 +133,7 @@ function resetGame() {
             myTTTGrid[row][column] = null
         }
     }
-    // set first player to "crosses" player // X goes first on TTT
+    // set first player to "crosses" player // X goes first on Tic-tac-toe
     currentPlayer = "crosses"
     // set new game
     isGameOver = false
@@ -134,6 +155,7 @@ if (typeof exports === 'object') {
         checkWinner,
         resetGame,
         getBoard,
+        displayNextPlayer
     }
 } else {
     console.log("Running in Browser")
