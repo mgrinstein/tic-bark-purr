@@ -1,5 +1,5 @@
 # noughts-crosses
-Simple Noughts and Crosses game using JavaScript, HTML and CSS. <br>
+Noughts and Crosses game using JavaScript, HTML and CSS. <br>
 Hosted on AWS with Amplify: [Noughts & Crosses | Pet Edition](https://main.d2fircvk0pskdi.amplifyapp.com)
 
 ![game screenshot](https://github.com/ferreiramonique/noughts-crosses/blob/80b97394cdd9b65ffb11dc7fc01bcc953ce3ccb7/screenshot.png)
