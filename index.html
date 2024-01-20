@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- <title>Noughts & Crosses</title> -->
-  <title>Cats & Dogs</title>
-  <meta content="text/html; charset=utf-8"
-        http-equiv="content-type">
-  <link href="main.css"
-        rel="stylesheet"
-        type="text/css">
-</head>
-<body>
-  <!-- <h1>Noughts & Crosses</h1> -->
-  <h1>Noughts & Crosses | Pet edition</h1>
-  <h2><i>Cats vs Dogs</i></h2>
-  <p id="current-player-display">Next turn: <span id="current-player-name"></span></p>
-  <p id="winner-display">The winner is <span id="winner-name"></span></p>
-  <div id="grid">
-    <div class="row"
-         id="row-0">
-      <div class="column"
-           id="row-0-column-0"></div>
-      <div class="column"
-           id="row-0-column-1"></div>
-      <div class="column"
-           id="row-0-column-2"></div>
+  <head>
+    <title>Tic-Bark-Purr</title>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Tic-Bark-Purr</h1>
+    <h3><i>Dogs vs Cats</i></h3>
+    <p id="current-player-display">
+      Next turn: <span id="current-player-name"></span>
+    </p>
+    <p id="winner-display"><span id="winner-name"></span></p>
+    <div id="grid">
+      <div class="row" id="row-0">
+        <div class="column" id="row-0-column-0"></div>
+        <div class="column" id="row-0-column-1"></div>
+        <div class="column" id="row-0-column-2"></div>
+      </div>
+      <div class="row" id="row-1">
+        <div class="column" id="row-1-column-0"></div>
+        <div class="column" id="row-1-column-1"></div>
+        <div class="column" id="row-1-column-2"></div>
+      </div>
+      <div class="row" id="row-2">
+        <div class="column" id="row-2-column-0"></div>
+        <div class="column" id="row-2-column-1"></div>
+        <div class="column" id="row-2-column-2"></div>
+      </div>
     </div>
-    <div class="row"
-         id="row-1">
-      <div class="column"
-           id="row-1-column-0"></div>
-      <div class="column"
-           id="row-1-column-1"></div>
-      <div class="column"
-           id="row-1-column-2"></div>
-    </div>
-    <div class="row"
-         id="row-2">
-      <div class="column"
-           id="row-2-column-0"></div>
-      <div class="column"
-           id="row-2-column-1"></div>
-      <div class="column"
-           id="row-2-column-2"></div>
-    </div>
-  </div>
-  <button id="reset-button">Reset</button>
-    <p>Remember to open your dev tools by pressing F12 to view log messages and errors!</p>
-  <script src="academy.js"
-        type="text/javascript"></script> 
-  <script src="connectors.js"
-        type="text/javascript"></script>
-</body>
+    <button id="reset-button">Reset</button>
+    <!-- <p>Remember to open your dev tools by pressing F12 to view log messages and errors!</p> -->
+    <script src="academy.js" type="text/javascript"></script>
+    <script src="connectors.js" type="text/javascript"></script>
+  </body>
 </html>
