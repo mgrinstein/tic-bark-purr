@@ -57,7 +57,7 @@ function positionClick(rowIndex, columnIndex, event) {
             throw "Expecting 'checkWinner' to return null or one of the strings 'noughts', 'crosses' or 'nobody'. Actually received: " + winner;
         }
         const winnerName = document.getElementById("winner-name");
-        winnerName.innerText = nextPlayerDictionary[winner];
+        winnerName.innerText = winnerDictionary[winner];
         const winnerDisplay = document.getElementById("winner-display");
         winnerDisplay.style.display = "block";
     }
