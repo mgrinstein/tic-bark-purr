@@ -1,6 +1,6 @@
 # Tic-Bark-Purr
 An animal-themed Tic-Tac-Toe game using JavaScript, HTML and CSS.  <br>
-Hosted on AWS with **Amplify**: [Tic-Bark-Purr](https://main.d2ujymcth4l85e.amplifyapp.com/)
+Hosted with **AWS Amplify**: [Tic-Bark-Purr](https://main.d2ujymcth4l85e.amplifyapp.com/)
 
 ![game demo](demo.gif)
 
@@ -20,7 +20,7 @@ Hosted on AWS with **Amplify**: [Tic-Bark-Purr](https://main.d2ujymcth4l85e.ampl
 ## Game Features
 - Place Xs and Os on a grid (or cats and dogs, rather)
 - Alternate turns between players
-- Display next player up
+- Display the next player up
 - Detect a winner, and display they've won
 - Detect a draw, and display it
 - Reset game
